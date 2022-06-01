@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Inheritance</title>
+</head>
+<body>
+    <script>
+        class rectangle
+        {
+            constructor()
+            {
+                var width,height,a;
+                 this.width=5;
+                this.height=10;
+
+        }
+        hello()
+        {
+            this.a=this.width*this.height;
+            document.write("Rectangle="+this.a+"<br>");
+        }
+
+    }
+
+        class square extends rectangle
+        {
+        constructor()
+     {
+    super()
+    var area;
+
+    }
+area1()
+{
+    this.a=this.a*2;
+    document.write("Square ="+this.a+"<br>");
+}
+}
+class add extends square
+{
+    constructor()
+    {
+        super()
+       var addition;
+    }
+    abc()
+    {
+    this.addition=this.width+this.height;
+    document.write("Addition="+this.addition);
+}
+}
+   let z=new add();
+   z.hello();
+   z.area1();
+   z.abc();
+    </script>
+</body>
+</html>
